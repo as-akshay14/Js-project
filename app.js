@@ -20,6 +20,10 @@ function renderBanners() {
 renderBanners();
 
 function renderProduct() {
+  document.getElementById("cartObjects").style.display = "none"; 
+  document.getElementById("cartTotal").style.display = "none";
+  document.getElementById("copyRightInfo").style.display = "block";
+  document.getElementById("content").style.display = "block";
 const product = document.getElementById("content");
 
   
@@ -59,11 +63,10 @@ function renderFruit(){
   const fruit = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b6899953d1a866534f516e2");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
-  <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="renderFruit()">Fruits & Vegetables</button>
+  <button class="nav-link" style = "background-color:firebrick" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="renderFruit()">Fruits & Vegetables</button>
   <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="renderBakery()">Bakery Cakes and Dairy</button>
   <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="renderBeverages()">Beverages</button>
   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="renderBeauty()">Beauty and Hygiene</button>
@@ -96,12 +99,11 @@ function renderBakery(){
   const bakery = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b6899123d1a866534f516de");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
   <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="renderFruit()">Fruits & Vegetables</button>
-  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="renderBakery()">Bakery Cakes and Dairy</button>
+  <button class="nav-link" style = "background-color:firebrick" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="renderBakery()">Bakery Cakes and Dairy</button>
   <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="renderBeverages()">Beverages</button>
   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="renderBeauty()">Beauty and Hygiene</button>
   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="renderBaby()">Baby Care</button>
@@ -133,13 +135,12 @@ function renderBeverages(){
   const beverages = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b675e5e5936635728f9fc30");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
   <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="renderFruit()">Fruits & Vegetables</button>
   <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="renderBakery()">Bakery Cakes and Dairy</button>
-  <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="renderBeverages()">Beverages</button>
+  <button class="nav-link" style = "background-color:firebrick" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="renderBeverages()">Beverages</button>
   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="renderBeauty()">Beauty and Hygiene</button>
   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="renderBaby()">Baby Care</button>
 </div>` + array.map((x) => {
@@ -170,14 +171,13 @@ function renderBeauty(){
   const fruit = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b68994e3d1a866534f516df");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
   <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="renderFruit()">Fruits & Vegetables</button>
   <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="renderBakery()">Bakery Cakes and Dairy</button>
   <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="renderBeverages()">Beverages</button>
-  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="renderBeauty()">Beauty and Hygiene</button>
+  <button class="nav-link" style = "background-color:firebrick" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="renderBeauty()">Beauty and Hygiene</button>
   <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="renderBaby()">Baby Care</button>
 </div>` + array.map((x) => {
     let { id, name, imageURL, description, price } = x;
@@ -207,7 +207,6 @@ function renderBaby(){
   const baby = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b6899683d1a866534f516e0");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
@@ -215,7 +214,7 @@ return(
   <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="renderBakery()">Bakery Cakes and Dairy</button>
   <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="renderBeverages()">Beverages</button>
   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="renderBeauty()">Beauty and Hygiene</button>
-  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="renderBaby()">Baby Care</button>
+  <button class="nav-link" style = "background-color:firebrick" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" onclick="renderBaby()">Baby Care</button>
 </div>` + array.map((x) => {
     let { id, name, imageURL, description, price } = x;
     return `
@@ -252,8 +251,8 @@ function addcart(id) {
   
     basket.push(array1);
   }
-  console.log(basket);
-  updateCart(id);
+  sessionStorage.cartItems = JSON.stringify(basket);
+  //updateCart(id);
   calculation(id);
 }
 
@@ -261,6 +260,7 @@ window.addcart = addcart;
 
 function updateCart() {
   let cart_item = document.getElementById("cartObjects");
+  cart_item.style.display = "none";
   cart_item.innerHTML = "";
   return(
     cart_item.innerHTML += basket.map((x) => {
